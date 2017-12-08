@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Payment Request Api Test</title>
+</head>
+<body>
+  <ul>
+    <li>
+      <label>
+        <input id="timeout-option" type="checkbox">enable payment timeout option (5second)
+      </label>
+    </li>
+    <li>
+      <label>
+        <input id="shipping-option" type="checkbox">enable shipping option
+      </label>
+    </li>
+  </ul>
+  
+
+  <form>
+    <ul>
+      <li>
+        <label>
+          <input class="item" type="checkbox" data-item-name="Jacket" value="20000">
+          Jacket ¥20,000
+        </label>
+      </li>
+      <li>
+        <label>
+          <input class="item" type="checkbox" data-item-name="Pants" value="15000">
+          Pants ¥15,000        
+        </label>
+      </li>
+      <li>
+        <label>
+          <input class="item" type="checkbox" data-item-name="Shirt" value="5000">
+          Shirt ¥5,000
+        </label>
+      </li>
+    </ul>
+    <button id="buy" type="button">Buy now!</button>
+  </form>
+  <script src="./index.js"></script>
+  <script>
+    window.performance && performance.mark && performance.mark('index.html');
+  </script>
+</body>
+</html>
